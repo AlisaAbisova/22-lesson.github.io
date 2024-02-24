@@ -12,14 +12,13 @@
     
     <script src="script.js"></script>
     <script>
-        function draw() {
+        function draw(event) {
             let canvas = document.getElementById("");
             let ctx = canvas.getContext("2d");
             let rect = canvas.getBoundingClientRect();
 
-            let posX = event.clientX;
-            let posY = event.clientY;
-
+            let posX = event.clientX - rect.left;
+            let posY = event.clientY - rect.top;
             // "#ff0000" = "#f00"
             cfx.fillStyle = "#ff0000";
 
