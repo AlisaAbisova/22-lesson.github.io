@@ -10,10 +10,10 @@
     <h1>Drawing Program</h1>
     <canvas id="imgCanvas" width="600" height="400" onclick="draw(event)"></canvas>
     
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script>
         function draw(event) {
-            let canvas = document.getElementById("");
+            let canvas = document.getElementById("imgCanvas");
             let ctx = canvas.getContext("2d");
             let rect = canvas.getBoundingClientRect();
 
@@ -26,7 +26,7 @@
 
             ctx.arc(posX, posY, 50, 0, 2 * Math.PI);
 
-            ctx.fill()
+            ctx.fill();
         }
     </script>
 </body>
